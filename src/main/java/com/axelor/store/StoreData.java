@@ -58,6 +58,11 @@ public class StoreData {
 			String name = sc.nextLine();
 			
 			System.out.println("Reading Records");
+			User user =(User) session.get(User.class, name);
+			session.beginTransaction();
+			
+			System.out.println(user);
+			session.getTransaction().commit();
 			
 			
 			

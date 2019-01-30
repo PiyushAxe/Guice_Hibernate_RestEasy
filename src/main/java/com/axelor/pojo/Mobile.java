@@ -15,7 +15,7 @@ public class Mobile {
 
 	@Id
 	@Column
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue
 	private int mid;
 	
 	@ManyToOne
